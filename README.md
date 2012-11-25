@@ -21,10 +21,10 @@ Installation
 Integration
 ========================
 ```php
-  $sm  = $this->getServiceLocator();
+  $sm   = $this->getServiceLocator();
   $mail = $sm->get('QuPHPMailer');
   $mail = $mail->Mail();
-  $mail->
+  $mail->Send();
 ```
 
 References usage and conditions in PHPMailer
