@@ -22,9 +22,9 @@ Integration
 ========================
 ```php
   $sm  = $this->getServiceLocator();
-  $pdf = $sm->get('QuTcPdf');
-  $pdf = $pdf->MyPdf();
-  $pdf->Output('test.pdf','I');
+  $mail = $sm->get('QuPHPMailer');
+  $mail = $mail->Mail();
+  $mail->
 ```
 
 References usage and conditions in PHPMailer
