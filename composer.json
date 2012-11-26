@@ -1,21 +1,15 @@
 {
-    "name": "qu/phpmailer",
+    "name": "qu-modules/qu-phpmailer",
     "description": "ZF2 module for PHPMailer",
     "type": "module",
-    "version":"1.0.0-dev",
-    "keywords": [
-        "phpmailer",
-        "zf2",
-        "module"
-    ],
-
-    "homepage": "https://github.com/Celtico/PHPMailer",
+    "version":"0.0.1-dev",
+    "keywords": ["phpmailer","zf2", "module"],
+    "homepage": "https://github.com/Celtico/QuPHPMailer",
     "license": "BSD-3-Clause",
     "require": {
         "php": ">=5.3.3",
         "zendframework/zendframework": "2.*"
     },
-
     "authors": [
         {
             "name": "Cel Ticó Petit",
@@ -24,8 +18,15 @@
             "role": "Developer"
         }
     ],
-
     "support": {
         "email": "cel@cenics.net"
+    },
+    "autoload": {
+        "psr-0": {
+            "QuPHPMailer": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     }
 }
